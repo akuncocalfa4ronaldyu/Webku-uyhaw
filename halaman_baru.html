@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Datang!</title>
+  <style>
+    body {
+      background: linear-gradient(to right, lightgreen, lightblue);
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .welcome-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 320px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    h1 {
+      color: darkgreen;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 25px;
+      font-weight: bold;
+    }
+
+    button {
+      background: linear-gradient(135deg, #00c6ff, #007bff);
+      color: white;
+      border: none;
+      padding: 10px 25px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: darkblue;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+  </head>
+<body>
+  <div class="welcome-box">
+    <h1>Selamat Datang! 🎉</h1>
+    <p>di bawah ini ada jadwal olahraga saya.click tombol di bawah jika tertarik melihat</p>
+    <button onclick="window.location.href='halaman3.html'"> Jadwal Workout saya </button>
+  </div>
+</body>
+</html>

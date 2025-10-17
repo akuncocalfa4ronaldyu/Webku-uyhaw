@@ -1,23 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
   <head>
-  <meta charset="UTP-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width,initial-scale=1.0">
+  <title>LATIHAN WEB SEDERHANA</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+  body {
+    background: linear-gradient(to right, lightblue, lightgreen);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h2 {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 2px solid white;
+}
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    width: 300px;
+    text-align: center;
+}
+h1 {
+    color: black;
+    margin-bottom: 20px;
+}
+input { 
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: linear-gradient(to right, #d9e4ff, #f0fff0);
+    outline-color: lightgreen;
+    transition: 0.7s;
+}
+   input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 225, 0.5);
+    background: linear-gradient(to right, #cce0ff, #ccffe0);
+ }
+   button {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    color: darkblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+button:hover {
+    background-color: darkblue;
+    color: white;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}     
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    padding: 5px 15px;
+    border-radius: 12px;
+    margin: 30px 0 15px 0;
+}
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.social-buttons a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.instagram {
+    background: #E1306C;
+}
+.tiktok {
+    background: #000000;
+}
+.social-buttons a:hover {
+    opacity: 0.8;
+}
+</style>
   </head>
-  <body style="background-color:lightblue;"></body>
- <center>
-   <body>
-     <div class="container">
-       <h1>LATIHAN</h1>
-         <form>
-           <label>USERNAME</label><br>
-           <input type="text"><br>
-           <label>PASSWORD</label><br>
-           <input type="text"><br>
-           <label>Notes for developer</label><br>
-           <input type="text"><br>
-           <button>LOGIN</button>
-         </form>
-         </div>
-      </body>
-     </html>
+  <body>
+  <h2>LATIHAN</h2>
+  <div class="container">
+    <h1>LATIHAN LOGIN WEB SEDERHANA</h1>
+    <div>
+  <label>NAMA PENGGUNA</label>
+  <input type="text" placeholder="username22"><br><br>
+    <label>PASSWORD</label>
+  <input type="password" placeholder="*****"><br><br>
+  <label>CATATAN (OPSIONAL)</label>
+  <input type="text" placeholder="jangan lupa ngaji"><br><br><br>
+  <a href="halaman_baru.html" target="_blank">
+  <button type="button">LOGIN</button>
+</a>
+  </div>
+  <h3>↓SOSIAL MEDIA↓</h3>
+    <div class="social-buttons">
+    <a href="https://www.instagram.com/ddnnzzzn"
+    class="instagram" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@elmaker66"
+    class="tiktok" target="_blank">
+      &#127925; 
+    </a>
+    </div>
+</body>
+</html>

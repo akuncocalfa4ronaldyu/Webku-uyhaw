@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Workout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #a8edea, #fed6e3);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-align: center;
+      background-color: white;
+      color: #333;
+      padding: 15px;
+      margin: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    table {
+      width: 80%;
+      margin: 40px auto 20px auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      text-align: center;
+      padding: 12px;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    /* Kotak baris Rest Day warna biru */
+    .rest td {
+      background-color: #2196F3; /* biru cerah */
+      color: white;              /* teks putih biar kontras */
+      font-weight: bold;
+    }
+
+    /* Tombol kembali */
+    .back-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .back-btn {
+      background: linear-gradient(135deg, #00c6ff, #007bff);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
+    .back-btn:hover {
+      background: darkblue;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Jadwal Workout Mingguan 💪</h1>
+
+  <table>
+    <tr>
+      <th>Hari</th>
+      <th>Workout</th>
+      <th>Durasi</th>
+    </tr>
+    <tr>
+      <td>Senin</td>
+      <td>Chest,Triceps,Shoulder</td>
+      <td>75 menit</td>
+    </tr>
+    <tr>
+      <td>Selasa</td>
+      <td>Back,Biceps,Traps</td>
+      <td>75 menit</td>
+    </tr>
+    <tr>
+      <td>Rabu</td>
+      <td>Leg & Abs </td>
+      <td>50 menit</td>
+    </tr>
+    <tr>
+      <td>Kamis</td>
+      <td>Chest,Tricep,Shoulder</td>
+      <td>75 menit</td>
+    </tr>
+    <tr>
+      <td>Jumat</td>
+      <td>Back,Biceps,Traps</td>
+      <td>75 menit</td>
+    </tr>
+    <tr>
+      <td>Sabtu</td>
+      <td>Cardio/full body circuit
+      (muaythai)</td>
+      <td>60 menit</td>
+    </tr>
+    <tr class="rest">
+      <td>Minggu</td>
+      <td>Rest Day 😴</td>
+      <td>-</td>
+    </tr>
+  </table>
+
+  <div class="back-container">
+    <button class="back-btn" onclick="window.location.href='halaman_baru.html'">⬅ Kembali ke Halaman Sebelumnya</button>
+  </div>
+
+  <footer>🔥 Stay consistent & trust the process!</footer>
+</body>
+</html>
